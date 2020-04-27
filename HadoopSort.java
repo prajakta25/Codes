@@ -10,8 +10,6 @@ import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
-import org.apache.hadoop.mapreduce.lib.partition.InputSampler;
-import org.apache.hadoop.mapreduce.lib.partition.TotalOrderPartitioner;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat;
 import org.apache.hadoop.util.GenericOptionsParser;
@@ -62,13 +60,6 @@ public class HadoopSort {
 
     FileInputFormat.addInputPath(job, new Path(args[0]));
     FileOutputFormat.setOutputPath(job, new Path(args[1]));
-    
-    Path partitionFile = new Path(new Path(args[2]), "partitioning");
-    TotalOrderPartitioner.setPartitionFile(job.getConfiguration(), partitionFile);
-
-    InputSampler.Sampler<Text, Text> sampler = new InputSampler.RandomSampler<>(0.01, 1000,32);
-    InputSampler.writePartitionFile(job, sampler);
-    job.setPartitionerClass(TotalOrderPartitioner.class);
 
     System.exit(job.waitForCompletion(true) ? 0 : 1);
   }
