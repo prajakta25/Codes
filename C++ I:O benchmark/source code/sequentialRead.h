@@ -1,0 +1,1 @@
+void *seqRead(void *vp);

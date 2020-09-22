@@ -1,0 +1,13 @@
+Data Read (GB): 4
+
+Data Write (GB): 4
+ 
+Sort Time (sec): 366.796
+
+Throughput(MB/sec): 11.167
+
+./valsort record_4GB_sorted.txt 
+Records: 42949672
+Checksum: 147a6e74151eb00
+Duplicate keys: 2426680
+SUCCESS - all records are in order

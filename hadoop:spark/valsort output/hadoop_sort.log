@@ -1,0 +1,90 @@
+1 small instance
+
+1GB
+
+./valsort sorted_1GB.txt 
+Records: 10737418
+Checksum: 51ec4739ccf08c
+Duplicate keys: 0
+SUCCESS - all records are in order
+
+4GB
+
+./valsort sorted_4GB.txt 
+Records: 42949672
+Checksum: 147a1348645ab6e
+Duplicate keys: 0
+SUCCESS - all records are in order
+
+16GB
+
+ ./valsort sort-16GB.txt 
+Records: 171798691
+Checksum: 51ea28e182989d7
+Duplicate keys: 0
+SUCCESS - all records are in order
+
+1 large instance
+
+1GB
+./valsort output_1gb.txt
+Records: 10737418
+Checksum: 51ea28e183989d7
+Duplicate keys: 0
+SUCCESS - all records are in order
+
+4GB
+./valsort output_4gb.txt
+Records: 42949672
+Checksum: 147a1348545ab6e
+Duplicate keys: 0
+SUCCESS - all records are in order
+
+16GB
+
+./valsort output_16gb.txt
+Records: 171798691
+Checksum: 51ea28e182389d7
+Duplicate keys: 0
+SUCCESS - all records are in order
+
+32GB
+
+./valsort output_32gb.txt 
+Records: 343597383
+Checksum: a3d691a53deed5
+Duplicate keys: 0
+SUCCESS - all records are in order
+
+
+4 small instance
+
+1GB 
+./valsort sort_1gb.txt 
+Records: 10737418
+Checksum: 51ec4739ccf08c
+Duplicate keys: 0
+SUCCESS - all records are in order
+
+4GB
+./valsort sort_4gb.txt 
+Records: 42949672
+Checksum: 147a1348645ab6e
+Duplicate keys: 0
+SUCCESS - all records are in order
+
+16GB
+ ./valsort sort-16GB.txt 
+Records: 171798691
+Checksum: 51ea28e182989d7
+Duplicate keys: 0
+SUCCESS - all records are in order
+
+32GB
+
+./valsort sort_32gb.txt 
+Records: 343597383
+Checksum: a3d691a53deed5
+Duplicate keys: 0
+SUCCESS - all records are in order
+

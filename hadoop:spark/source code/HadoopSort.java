@@ -51,6 +51,7 @@ public class HadoopSort {
     
     job.setMapperClass(SortMap.class);
     job.setReducerClass(SortReduce.class);
+    job.setNumReduceTasks(2);
     
     job.setInputFormatClass(KeyValueTextInputFormat.class);
     job.setMapOutputKeyClass(Text.class);

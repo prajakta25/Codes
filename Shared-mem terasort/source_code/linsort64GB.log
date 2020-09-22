@@ -1,0 +1,16 @@
+Data Read (GB): 2.58
+
+Data Write (GB): 2.58
+ 
+Sort Time (sec): 5328.08
+
+Throughput(MB/sec): 12.3
+
+./valsort output_64GB.txt 
+Records: 687194767
+Checksum: 147ad98a21f6e7a7
+Duplicate keys: 0
+SUCCESS - all records are in order
+
+
+

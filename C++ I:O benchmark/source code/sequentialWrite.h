@@ -1,0 +1,1 @@
+void *seqWrite(void *vp);

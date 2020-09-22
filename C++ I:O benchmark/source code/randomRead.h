@@ -1,0 +1,1 @@
+void *ranRead(void *vp);

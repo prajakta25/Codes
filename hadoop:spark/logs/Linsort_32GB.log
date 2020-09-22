@@ -1,0 +1,8 @@
+Sort Time (milliseconds): 1968613 
+
+ubuntu@demo-namenode:~/gensort-1.5$ ./valsort output_32gb.txt 
+Records: 343597383
+Checksum: a3d691a53de5ed5
+Duplicate keys: 0
+SUCCESS - all records are in order
+ubuntu@demo-namenode:~/gensort-1.5$ 
